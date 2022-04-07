@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+    <head>
+
+        <title>Inscription</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+        <meta charset="UTF-8">
+        <script type="text/javascript">
+	function verif(){
+		var x = getElementsByName("pwd").value;
+		var y = getElementsByName("pwd2").value;
+		if(x!=y){
+			alert("mot de passe ne correspend pas");return false;
+		}return true;
+    }
+
+	}
+</script>
+    </head>
+    <body>
+        <header>
+            <img src="logo.png" style="margin-left: 35%"/>
+        </header>
+        <form action="Inscription.jsp" method="POST" onsubmit="return verif()">
+            
+            <label>Username</label>
+            <input type="text" name="user"/><br>
+            <label>Password</label>
+            <input type="password" name="pwd"/><br>
+             <label>Retape Password</label>
+            <input type="password" name="pwd2"/><br>
+            <label>Rôle</label>
+            <select name="role">
+            	<option>Administrateur</option>
+            	<option>Responsable de la direction</option>
+            	<option>Directeur génèral</option>
+            </select><br>
+            <button type="submit" >Soumettre</button>
+            
+            
+            
+            
+        </form>
+        <footer>
+            <p>FIXE/FAX : 71881110</p>
+            <a href="https://www.facebook.com/NewTechnologies/">Page Facebook</a>
+        </footer>
+            
+    </body>
+</html>
